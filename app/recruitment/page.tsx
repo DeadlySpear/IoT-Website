@@ -129,6 +129,7 @@ export default function RecruitmentPage() {
         toast({
           title: "Application submitted successfully!",
           description: "We'll review your application and get back to you soon.",
+          variant: "success" as any,
         })
         // Reset form
         setFormData({

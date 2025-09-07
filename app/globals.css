@@ -126,6 +126,7 @@
   }
   body {
     @apply bg-background text-foreground;
+    zoom: 0.9;
   }
 
   .font-heading {
@@ -164,37 +165,8 @@
   }
 }
 
-/* Added custom styling for better form element visibility */
+/* Enhanced form element styling for better visibility */
 @layer components {
-  /* Enhanced checkbox visibility with stronger borders and backgrounds */
-  [data-state="checked"] {
-    @apply bg-primary border-primary text-primary-foreground;
-  }
-
-  [data-state="unchecked"] {
-    @apply bg-card border-2 border-muted-foreground/50 hover:bg-muted/50 hover:border-primary/50;
-  }
-
-  /* Added visible borders and better contrast for all form inputs */
-  input[type="text"],
-  input[type="email"],
-  input[type="tel"],
-  input[type="url"],
-  textarea,
-  select {
-    @apply bg-card/50 border-2 border-muted-foreground/30 hover:border-primary/50 focus:border-primary focus:bg-card;
-  }
-
-  /* Enhanced select dropdown with visible borders */
-  [data-radix-select-trigger] {
-    @apply bg-card/50 border-2 border-muted-foreground/30 hover:border-primary/50 focus:border-primary focus:bg-card;
-  }
-
-  /* Made checkbox container more visible */
-  .checkbox-container {
-    @apply p-1 rounded border border-muted-foreground/20;
-  }
-
   /* Better label visibility */
   label {
     @apply text-foreground/90 font-medium;
@@ -205,12 +177,13 @@
     @apply text-muted-foreground/60;
   }
 
-  /* Added specific styling for checkbox indicators */
-  [data-radix-checkbox-root] {
-    @apply w-5 h-5 border-2 border-muted-foreground/50 bg-card/80 data-[state=checked]:bg-primary data-[state=checked]:border-primary;
+  /* Form field containers for better visual grouping */
+  .form-field {
+    @apply space-y-2;
   }
 
-  [data-radix-checkbox-indicator] {
-    @apply text-primary-foreground;
+  /* Enhanced focus states for better accessibility */
+  .form-input:focus-within {
+    @apply ring-2 ring-primary/20;
   }
 }

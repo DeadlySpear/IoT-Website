@@ -260,9 +260,11 @@ export default function ContactPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="flex items-center gap-2 mb-4 md:mb-0">
-              <div className="h-6 w-6 bg-primary rounded flex items-center justify-center">
-                <span className="text-primary-foreground text-xs font-bold">I</span>
-              </div>
+              <img 
+                src="/iotronics-logo.png" 
+                alt="IoTronics Logo" 
+                className="h-6 w-6 object-contain"
+              />
               <span className="font-heading font-bold text-lg">IoTronics Club</span>
             </div>
             <div className="flex items-center gap-6 text-sm text-muted-foreground">

@@ -23,6 +23,11 @@ export const metadata: Metadata = {
   title: "IoTronics Club - College Technology Hub",
   description: "Join IoTronics Club - Explore IoT, coding, and cutting-edge technology with fellow students",
   generator: "v0.app",
+  icons: {
+    icon: "/iotronics-logo.png",
+    shortcut: "/iotronics-logo.png",
+    apple: "/iotronics-logo.png",
+  },
 }
 
 export default function RootLayout({
